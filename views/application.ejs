@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>NonAcademy - Email verification</title>
+    <style>
+      *, *::before, *::after{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body{
+        font-family: sans-serif;
+      }
+
+      .main{
+        padding: 80px 0;
+        width: 100%;
+        background: #F2F2F2;
+      }
+
+      .container{
+        background-color: white;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 30px 40px;
+      }
+
+      .container img{
+        width: 160px;
+      }
+
+      .container .title{
+        font-weight: 500;
+        font-size: 1.5rem;
+        margin: 2rem 0;
+        color: #001e00;
+      }
+
+      .container h4{
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+        color: #001e00;
+      }
+
+      .container p{
+        color: #222222;
+        margin-bottom: 1.1rem;
+        font-size: 1rem;
+      }
+
+
+      @media only screen and (max-width: 640px) {
+        .main{
+          padding: 0;
+        }
+
+        .container .title{
+          font-size: 1.1rem;
+        }
+
+        .container p{
+          font-size: 0.9rem;
+        }
+      }
+      
+    </style>
+  </head>
+  <body>
+  <div class="main">
+    <div class="container">
+      <h1 class="title">Campus Ambassador Application Submission</h1>
+      <p>Name: <%= Name %></p>
+      <p>Institute: <%= Institute %></p>
+      <p>Phone: <%= Phone %></p>
+      <p>Email: <%= Email %></p>
+      <p>Street Address: <%= Street %></p>
+      <p>City: <%= City %></p>
+      <p>Zip: <%= Zip %></p>
+
+      <h3>How would you promote our organisation on campus and in your community?</h3>
+      <p><%= Q1 %></p>
+      
+      <h3>What do you hope to gain from being a campus ambassador for our organisation?</h3>
+      <p><%= Q2 %></p>
+      
+      <h3>Why are you joining to this Campus Ambassador Program?</h3>
+      <p><%= Q3 %></p>
+
+      <h3>Is there anything else you would like us to know about you that might be relevant to this role?</h3>
+      <p><%= Q4 %></p>
+      
+      <p>Facebook Profile: <%= Facebook %></p>
+      <p>LinkedIn Profile: <%= LinkedIn %></p>
+      <p>Twitter Profile: <%= Twitter %></p>
+
+    </div>
+  </div>
+  </body>
+</html>
